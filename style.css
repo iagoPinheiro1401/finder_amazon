@@ -39,3 +39,22 @@ input[type="text"] {
   button:hover {
     background-color: #0056b3;
   }
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  grid-row-gap: 200px;
+  margin: 300px 100px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(241, 241, 241);
+  border-radius: 10px;
+  border: solid rgb(230, 229, 229);
+  padding: 10px 30px;
+}
