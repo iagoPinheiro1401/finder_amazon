@@ -15,25 +15,6 @@ body {
   padding: 0 100px;
   display: flex;
   align-items: center;
-
-  @media (max-width: 500px) {
-    padding: 0 30px;
-    height: 60px;
-  }
-
-  @media (min-width: 501px) and (max-width: 100px) {
-    padding: 0 50px;
-  }
-}
-
-.navbar h1 {
-  @media (max-width: 500px) {
-    font-size: 15px;
-  }
-
-  @media (min-width: 501px) and (max-width: 800px) {
-    font-size: 20px;
-  }
 }
 
 .search {
@@ -42,29 +23,11 @@ body {
   margin-left: 500px;
   align-items: center;
   justify-content: center;
-
-  @media (max-width: 1300px) {
-    margin-left: 50px;
-  }
 }
 
 input[type="text"] {
   padding: 10px;
   width: 300px;
-
-  @media (max-width: 500px) {
-    width: 100px;
-    padding: 5px;
-    height: 10px;
-  }
-
-  @media (min-width: 801px) and (max-width: 1000px) {
-    width: 200px;
-  }
-
-  @media (min-width: 501px) and (max-width: 800px) {
-    width: 150px;
-  }
 }
 
 button {
@@ -74,10 +37,6 @@ button {
   border: none;
   cursor: pointer;
   transition: background-color 0.3s; 
-
-  @media (max-width: 500px) {
-    padding: 4px 5px;
-  }
 }
 
 button:hover {
@@ -96,13 +55,6 @@ button:hover {
   grid-gap: 20px;
   grid-row-gap: 100px;
   margin: 50px 100px;
-
-  @media (max-width: 800px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 70px;
-  }
 }
 
 .product {
@@ -114,9 +66,69 @@ button:hover {
   border-radius: 10px;
   border: solid rgb(230, 229, 229);
   padding: 10px 30px;
+}
 
-  @media (max-width: 500px) {
+
+/* medias */
+@media (max-width: 500px) {
+  .product {
     width: 300px;
     height: 450px;
+  }
+
+  .navbar {
+    padding: 0 30px;
+    height: 60px;
+  }
+
+  .navbar h1 {
+    font-size: 15px;
+  }
+
+  input[type="text"] {
+    width: 100px;
+    padding: 5px;
+    height: 10px;
+  }
+
+  button {
+    padding: 4px 5px;
+  }
+}
+
+@media (max-width: 800px) {
+  .products-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .search {
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1000px) {
+  .navbar {
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 800px) {
+  .navbar h1 {
+    font-size: 20px;
+  }
+
+  input[type="text"] {
+    width: 150px;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1000px) {
+  input[type="text"] {
+    width: 200px;
   }
 }
