@@ -23,3 +23,9 @@ You need to have Node.js and npm (Node.js package manager) installed on your mac
 
 4. **Run Locally:**
    - After leaving the server online, open the index.html file in your browser, i recommend using the liver server extension
+
+## prototype
+
+**Here is a prototype of how the website looked on different screens**
+
+![prototipo](/public/prototipo.png)
